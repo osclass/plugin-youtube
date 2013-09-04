@@ -1,6 +1,10 @@
 Changelog Embed youtube videos
 ==============================
 
+##version 1.2 - 03/09/2013
+
+* Fixed issues with IE10 (z-index issues)
+
 ##version 1.1 - 16/07/2013
 
 * Updated to work fine with Osclass 3.2
