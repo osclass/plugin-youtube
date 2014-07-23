@@ -1,6 +1,10 @@
 Changelog Embed youtube videos
 ==============================
 
+##version 1.3 - 23/07/2014
+
+* switch to iframe embed code
+
 ##version 1.2 - 03/09/2013
 
 * Fixed issues with IE10 (z-index issues)
