@@ -3,7 +3,7 @@
 Plugin Name: Embed Youtube videos
 Plugin URI: http://www.osclass.org/
 Description: This plugin extends the item to embed youtube videos.
-Version: 1.2
+Version: 1.3
 Author: OSClass
 Author URI: http://www.osclass.org/
 Short Name: youtube
@@ -143,12 +143,12 @@ Plugin update URI: youtube
     function convert_youtube_url($url) {
         $youtube_url = '' ;
         if( preg_match('|.*?youtube.*?v[\?/=](.{11})|', $url) ) {
-            $youtube_url = preg_replace( '|.*?youtube.*?v[\?/=](.{11}).*|', 'http://www.youtube.com/v/$01?fs=1', $url ) ;
+            $youtube_url = preg_replace( '|.*?youtube.*?v[\?/=](.{11}).*|', 'http://www.youtube.com/embed/$01?fs=1', $url ) ;
             return $youtube_url;
         }
 
         if( preg_match('|.*?youtu\.be\/(.{11})|', $url) ) {
-            $youtube_url = preg_replace( '|.*?youtu\.be\/(.{11}).*|', 'http://www.youtube.com/v/$01?fs=1', $url ) ;
+            $youtube_url = preg_replace( '|.*?youtu\.be\/(.{11}).*|', 'http://www.youtube.com/embed/$01?fs=1', $url ) ;
             return $youtube_url ;
         }
 
